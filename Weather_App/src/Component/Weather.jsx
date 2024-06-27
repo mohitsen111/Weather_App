@@ -48,7 +48,7 @@ const Weather = () => {
            if(!res.ok){
               alert(data.message);
               return;
-            }
+        }
 
         const icon = allIcons[data.weather[0].icon] || clear_icon;
         setWeatherData({
@@ -97,9 +97,7 @@ const Weather = () => {
             </div>
         </div>
 
-         </>:<>
-            <p className='error-show'> Enable to find your location </p>
-         </>}
+         </>:<></>}
 
 
        
